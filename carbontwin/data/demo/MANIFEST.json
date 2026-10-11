@@ -1,0 +1,85 @@
+{
+  "generatedAt": "2026-10-11T10:03:21.935815Z",
+  "start": "2026-09-11T00:00:00",
+  "days": 30,
+  "facilities": [
+    {
+      "id": "11111111-1111-4111-8111-111111111111",
+      "key": "office",
+      "name": "Office Tower A",
+      "type": "office",
+      "region": "IN-MH",
+      "timezone": "Asia/Kolkata",
+      "lat": 19.076,
+      "lon": 72.8777,
+      "file": "office_tower.csv",
+      "rows": 2871,
+      "source": "synthetic",
+      "licence": "CC BY 4.0"
+    },
+    {
+      "id": "22222222-2222-4222-8222-222222222222",
+      "key": "hospital",
+      "name": "City General Hospital",
+      "type": "hospital",
+      "region": "GB-LND",
+      "timezone": "Europe/London",
+      "lat": 51.5074,
+      "lon": -0.1278,
+      "file": "hospital.csv",
+      "rows": 2865,
+      "source": "synthetic",
+      "licence": "CC BY 4.0"
+    },
+    {
+      "id": "33333333-3333-4333-8333-333333333333",
+      "key": "campus",
+      "name": "Tech Campus West",
+      "type": "campus",
+      "region": "US-CA",
+      "timezone": "America/Los_Angeles",
+      "lat": 37.7749,
+      "lon": -122.4194,
+      "file": "campus.csv",
+      "rows": 2860,
+      "source": "synthetic",
+      "licence": "CC BY 4.0"
+    },
+    {
+      "id": "44444444-4444-4444-8444-444444444444",
+      "key": "data_center",
+      "name": "HyperScale DC-1",
+      "type": "data_center",
+      "region": "DE-BE",
+      "timezone": "Europe/Berlin",
+      "lat": 52.52,
+      "lon": 13.405,
+      "file": "data_center.csv",
+      "rows": 2874,
+      "source": "synthetic",
+      "licence": "CC BY 4.0"
+    },
+    {
+      "id": "55555555-5555-4555-8555-555555555555",
+      "key": "chennai",
+      "name": "Chennai IT Park",
+      "type": "office",
+      "region": "IN-TN",
+      "timezone": "Asia/Kolkata",
+      "lat": 13.0827,
+      "lon": 80.2707,
+      "file": "chennai_it_park.csv",
+      "start": "2024-03-30T00:00:00",
+      "end": "2024-04-29T00:00:00",
+      "rows": 2865,
+      "source": "real-weather+gov-demand",
+      "licence": "CC BY 4.0 (Open-Meteo weather) + Government of India open data (CEA)",
+      "provenance": {
+        "weather": "data/raw/tamil_nadu_weather_solar_2024.csv",
+        "demand": "data/raw/india_states_daily_energy_MU.csv",
+        "gridIntensity": "data/raw/india_global_electricity_mix.csv (2024)"
+      }
+    }
+  ],
+  "notes": "Synthetic datasets are produced by data/scripts/generate_synthetic.py when no permissively-licensed real data is present. See docs/data-sources.md. The Chennai IT Park facility is backed by real Open-Meteo 2024 weather and CEA demand."
+}

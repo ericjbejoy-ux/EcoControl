@@ -1,0 +1,27 @@
+{
+  "name": "carbontwin",
+  "version": "0.1.0",
+  "private": true,
+  "description": "CarbonTwin — digital-twin platform for building carbon intelligence (monorepo root)",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=20.11"
+  },
+  "scripts": {
+    "start": "npm run start:ingestion --workspace @carbontwin/api",
+    "dev": "npm run dev:ingestion --workspace @carbontwin/api",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm run test --workspace @carbontwin/api",
+    "test:coverage": "npm run test:coverage --workspace @carbontwin/api",
+    "dev:ingestion": "npm run dev:ingestion --workspace @carbontwin/api",
+    "start:ingestion": "npm run start:ingestion --workspace @carbontwin/api",
+    "seed": "npm run seed --workspace @carbontwin/api",
+    "data:build": "python data/scripts/build_demo_datasets.py",
+    "data:reference": "python data/scripts/build_reference_datasets.py",
+    "data:validate": "python data/scripts/validate_dataset.py \"data/demo/*.csv\""
+  }
+}

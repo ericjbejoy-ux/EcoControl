@@ -1,0 +1,43 @@
+{
+  "_comment": "Per-region demand shape factors derived from CEA daily state energy and peak-demand tables (data.gov.in open data). Factors are normalised to a mean of 1.0 and are informational for M2 / consumed by load modelling.",
+  "generatedAt": "2026-10-11T12:23:42.521729Z",
+  "source": "Central Electricity Authority (CEA) daily state tables, data.gov.in",
+  "regions": {
+    "IN-TN": {
+      "state": "Tamil Nadu",
+      "unitEnergy": "MU (million units = GWh) per day",
+      "unitPeak": "MW per day",
+      "rangeEnergy": "2013-01-01 .. 2024-04-28",
+      "daysEnergy": 3955,
+      "meanDailyEnergyMU": 293.14,
+      "peakDemandMW": {
+        "min": 933.0,
+        "max": 20583.0,
+        "mean": 13559.6
+      },
+      "monthlyFactors": {
+        "1": 0.9353,
+        "2": 1.029,
+        "3": 1.1015,
+        "4": 1.0898,
+        "5": 1.0328,
+        "6": 1.0505,
+        "7": 1.0212,
+        "8": 1.0039,
+        "9": 0.9971,
+        "10": 0.9562,
+        "11": 0.8797,
+        "12": 0.9004
+      },
+      "weekdayFactors": {
+        "0": 0.9874,
+        "1": 1.01,
+        "2": 1.0158,
+        "3": 1.0167,
+        "4": 1.0207,
+        "5": 1.0077,
+        "6": 0.9422
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "_comment": "Time-of-use electricity tariffs used for the cost/optimisation side of the demo (informational for M2; consumed by M3/M5). Prices are in local currency per kWh unless currencyOverride is set. peakHours are local wall-clock hours [start, end).",
+  "generatedAt": "2026-01-01T00:00:00.000Z",
+  "regions": {
+    "IN-MH": {
+      "currency": "INR",
+      "currencyOverride": "USD_per_kwh",
+      "usdPerKwh": { "offPeak": 0.07, "shoulder": 0.1, "peak": 0.15 },
+      "peakHours": [[18, 22]],
+      "shoulderHours": [[9, 18]],
+      "demandChargePerKwMonth": 6.5,
+      "feedInTariffUsdPerKwh": 0.05
+    },
+    "IN-DL": {
+      "currency": "INR",
+      "currencyOverride": "USD_per_kwh",
+      "usdPerKwh": { "offPeak": 0.06, "shoulder": 0.09, "peak": 0.14 },
+      "peakHours": [[18, 22]],
+      "shoulderHours": [[8, 18]],
+      "demandChargePerKwMonth": 6.0,
+      "feedInTariffUsdPerKwh": 0.05
+    },
+    "US-CA": {
+      "currency": "USD",
+      "usdPerKwh": { "offPeak": 0.12, "shoulder": 0.24, "peak": 0.48 },
+      "peakHours": [[16, 21]],
+      "shoulderHours": [[7, 16], [21, 23]],
+      "demandChargePerKwMonth": 22.0,
+      "feedInTariffUsdPerKwh": 0.08
+    },
+    "US-TX": {
+      "currency": "USD",
+      "usdPerKwh": { "offPeak": 0.08, "shoulder": 0.11, "peak": 0.19 },
+      "peakHours": [[14, 20]],
+      "shoulderHours": [[7, 14]],
+      "demandChargePerKwMonth": 14.0,
+      "feedInTariffUsdPerKwh": 0.06
+    },
+    "US-NY": {
+      "currency": "USD",
+      "usdPerKwh": { "offPeak": 0.09, "shoulder": 0.16, "peak": 0.31 },
+      "peakHours": [[14, 20]],
+      "shoulderHours": [[7, 14]],
+      "demandChargePerKwMonth": 25.0,
+      "feedInTariffUsdPerKwh": 0.07
+    },
+    "GB-LND": {
+      "currency": "GBP",
+      "usdPerKwh": { "offPeak": 0.14, "shoulder": 0.28, "peak": 0.42 },
+      "peakHours": [[16, 20]],
+      "shoulderHours": [[7, 16], [20, 22]],
+      "demandChargePerKwMonth": 20.0,
+      "feedInTariffUsdPerKwh": 0.1
+    },
+    "DE-BE": {
+      "currency": "EUR",
+      "usdPerKwh": { "offPeak": 0.18, "shoulder": 0.3, "peak": 0.45 },
+      "peakHours": [[8, 12], [17, 21]],
+      "shoulderHours": [[12, 17]],
+      "demandChargePerKwMonth": 18.0,
+      "feedInTariffUsdPerKwh": 0.09
+    }
+  }
+}

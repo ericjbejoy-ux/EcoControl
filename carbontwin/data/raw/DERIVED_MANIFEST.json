@@ -1,0 +1,118 @@
+{
+  "generatedAt": "2026-10-11T12:23:42.523235Z",
+  "generator": "data/scripts/build_reference_datasets.py",
+  "inputs": {
+    "electricityMix": "data/raw/india_global_electricity_mix.csv",
+    "weatherTamilNadu": "data/raw/tamil_nadu_weather_solar_2024.csv",
+    "weatherChennai": "data/raw/chennai_weather_2024.csv",
+    "demandEnergy": "data/raw/india_states_daily_energy_MU.csv",
+    "demandPeak": "data/raw/india_states_peak_demand_MW.csv"
+  },
+  "region": "IN-TN",
+  "gridIntensity": {
+    "year": 2024,
+    "mixTWh": {
+      "Other renewables": 0.0,
+      "Bioenergy": 22.25,
+      "Solar": 143.07,
+      "Wind": 81.54,
+      "Hydropower": 156.53,
+      "Nuclear": 54.7,
+      "Gas": 56.44,
+      "Oil": 4.09,
+      "Coal": 1517.9
+    },
+    "totalTWh": 2036.52,
+    "annualAverageCi": 634.6,
+    "lowCarbonSharePct": 21.4
+  },
+  "climate": {
+    "baseC": 28.43,
+    "seasonalAmpC": 3.77,
+    "diurnalAmpC": 4.96,
+    "monthlyMeansC": {
+      "1": 25.62,
+      "2": 27.78,
+      "3": 29.81,
+      "4": 32.8,
+      "5": 30.29,
+      "6": 29.06,
+      "7": 29.36,
+      "8": 28.33,
+      "9": 30.63,
+      "10": 26.69,
+      "11": 25.6,
+      "12": 25.25
+    },
+    "diurnalCi": [
+      1.0222,
+      0.9881,
+      0.9576,
+      0.8965,
+      0.8833,
+      0.9116,
+      0.9411,
+      0.9643,
+      0.9365,
+      0.9318,
+      0.9376,
+      0.9501,
+      0.9818,
+      0.9922,
+      0.9892,
+      0.9892,
+      1.0002,
+      1.0661,
+      1.1431,
+      1.198,
+      1.1431,
+      1.0991,
+      1.0551,
+      1.0222
+    ]
+  },
+  "demand": {
+    "state": "Tamil Nadu",
+    "unitEnergy": "MU (million units = GWh) per day",
+    "unitPeak": "MW per day",
+    "rangeEnergy": "2013-01-01 .. 2024-04-28",
+    "daysEnergy": 3955,
+    "meanDailyEnergyMU": 293.14,
+    "peakDemandMW": {
+      "min": 933.0,
+      "max": 20583.0,
+      "mean": 13559.6
+    },
+    "monthlyFactors": {
+      "1": 0.9353,
+      "2": 1.029,
+      "3": 1.1015,
+      "4": 1.0898,
+      "5": 1.0328,
+      "6": 1.0505,
+      "7": 1.0212,
+      "8": 1.0039,
+      "9": 0.9971,
+      "10": 0.9562,
+      "11": 0.8797,
+      "12": 0.9004
+    },
+    "weekdayFactors": {
+      "0": 0.9874,
+      "1": 1.01,
+      "2": 1.0158,
+      "3": 1.0167,
+      "4": 1.0207,
+      "5": 1.0077,
+      "6": 0.9422
+    }
+  },
+  "demoFacility": {
+    "id": "55555555-5555-4555-8555-555555555555",
+    "key": "chennai",
+    "file": "chennai_it_park.csv",
+    "start": "2024-03-30T00:00:00",
+    "days": 30,
+    "rows": 2865
+  }
+}

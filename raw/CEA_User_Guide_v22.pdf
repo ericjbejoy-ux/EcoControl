@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+<title>Central Electricity Authority - Login</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/fontawesome-all.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="login_bg1 login">
+
+	<div id="wrapper">
+		<div class="container">
+			<div class="row justify-content-md-center">
+				<section class="login-section">
+					<div class="container">
+						<div class="login-card text-left">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+							<!-- Demo Bypass Notice -->
+							<!--                         <div class="alert-demo">
+                            <i class="fas fa-info-circle me-2"></i>
+                            <strong>Demo Mode:</strong> Enter any username/password and 6-digit captcha
+                        </div> -->
+                        
+                        
+                        
+							
+								
+								
+
+							
+							<div class="login-div">
+								<img src="./images/emblem.svg" alt="NIC Logo" class="nic-logo">
+								<div>
+									<h4>Ministry of Power</h4>
+									<h1 class="heading-CEA">Central Electricity Authority</h1>
+								</div>
+							</div>
+
+							<!-- Login Form -->
+							<form id="login-form" action="/login" method="post"><input type="hidden" name="_csrf" value="yR4ZDZfbjWAW_XAJ2BeEBj4EppabDD24QTTCTxd56hKckO9Q-SYsPqO-6AE7zkRs4DqwNgc8i_SibwuVdAamKSRL2Sr5pIw1"/>
+								<input type="hidden" name="_csrf" value="yR4ZDZfbjWAW_XAJ2BeEBj4EppabDD24QTTCTxd56hKckO9Q-SYsPqO-6AE7zkRs4DqwNgc8i_SibwuVdAamKSRL2Sr5pIw1">
+
+
+
+								<!-- Username -->
+
+								<div class="form-outline mb-4">
+									<label class="form-label" for="username">Username</label> <input
+										id="username" name="username" tabindex="1"
+										placeholder="Enter user name" class="form-control" type="text"
+										value="" maxlength="15" autocomplete="off" />
+									<!-- Error -->
+									<div class="invalid-feedback" id="usernameError">
+										Username is required</div>
+								</div>
+
+								<!-- Password -->
+								<div class="form-outline mb-4">
+									<label class="form-label" for="password">Password</label> <input
+										id="password" name="password" tabindex="2"
+										placeholder="Enter Password" type="password"
+										class="form-control" value="" maxlength="15"
+										autocomplete="off" />
+									<!-- Error -->
+									<div class="invalid-feedback" id="passwordError">
+										Password is required</div>
+								</div>
+
+								<!-- CAPTCHA Section -->
+								<div class="form-group">
+									<label class="form-label"> Enter captcha here <span
+										class="text-danger">*</span>
+									</label>
+									<div class="captcha-container">
+										<div
+											style="display: flex; align-items: center; flex-wrap: wrap;">
+											<div>
+												<!-- <canvas id="captchaCanvas" width="175" height="50"
+													tabindex="0" role="img" aria-label="CAPTCHA image"
+													style="border: 1px solid #999; border-radius: 8px; background: #fef9e8;">
+												</canvas> -->
+												<img id="captchaImage"
+											     src=""
+											     width="175"
+											     height="50"
+											     alt="CAPTCHA image"
+											     style="border: 1px solid #999;
+											            border-radius: 8px;
+											            background: #fef9e8;">
+											</div>
+											<div class="capchaset">
+												<button type="button" id="refreshCaptcha"
+													class="btn btn-link" aria-label="Refresh Captcha">
+													<i class="fa fa-refresh" aria-hidden="true"
+														style="font-size: 200%; color: #15803f;"></i>
+												</button>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								
+								<!-- CAPTCHA INPUT -->
+								<div class="form-group" style="margin-top: 12px;">
+									<!-- <input type="text" id="captchaInput" name="captcha"
+										maxlength="6" class="form-control"
+										placeholder="Enter 6-character code" autocomplete="off" th:disabled="${lockSeconds != null}"> -->
+										<input type="text"
+									       id="captchaInput"
+									       name="captcha"
+									       maxlength="6"
+									       class="form-control"
+									       placeholder="Enter 6-character code"
+									       autocomplete="off">
+										
+									<div id="captchaHelp" class="form-text text-muted small">
+										<i class="fas fa-info-circle me-1"></i> Enter the 6 characters
+										shown above
+									</div>
+									<div class="invalid-feedback" id="captchaError">Captcha
+										cannot be blank.</div>
+								</div>
+
+								<!-- Hidden field to store generated captcha value -->
+								
+
+								<!-- Login Button - YAHAN SIRF BUTTON CHANGE KIYA HAI -->
+								<div class="text-center pt-1 mb-3">
+									<!--                                 <a th:href="@{/brief-description}" class="btn btn-primary w-100 py-2" tabindex="4">
+                                    <i class="fas fa-sign-in-alt me-2"></i> Login → Dashboard
+                                </a> -->
+									<button type="submit" class="btn btn-primary w-100 py-2">
+										Login</button>
+								</div>
+
+								<!-- Forgot password link -->
+								<div class="d-flex justify-content-between mb-3">
+									<a href="/forgot-password" class="text-muted text-decoration-none small forgot-password-link"
+								   >Forgot password?</a> <a href="/"
+										class="text-decoration-none small">Dashboard</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+
+<script src="/js/jquery-3.6.0.min.js"></script>
+<script src="/resources/cea_template/cea_assets/js/bootstrap.bundle.min.js"></script>
+
+ <script nonce="xYwighvkJQauzqKRf0MszRbyDfE8X12h/9fNRrIc3Dw=">
+ var contextPath = /*/*/ '';
+ document.addEventListener("DOMContentLoaded", function () {
+	    generateCaptcha();
+	});
+ 		
+		
+		function generateCaptcha() {
+
+		    const captchaImage =
+		        document.getElementById("captchaImage");
+
+		    captchaImage.src =
+		        contextPath + "captcha?t=" + Date.now();
+
+		    document.getElementById("captchaInput").value = "";
+		}
+		document.getElementById("refreshCaptcha")
+	    .addEventListener("click", generateCaptcha);
+		
+		
+		document.getElementById("login-form").addEventListener("submit",
+				function(e) {
+
+					let isValid = true;
+
+					// INPUT VALUES
+					let username = document.getElementById("username");
+					let password = document.getElementById("password");
+					let captcha = document.getElementById("captchaInput");
+
+					// RESET OLD ERRORS
+					username.classList.remove("is-invalid");
+					password.classList.remove("is-invalid");
+					captcha.classList.remove("is-invalid");
+
+					// USERNAME CHECK
+					if (username.value.trim() === "") {
+						username.classList.add("is-invalid");
+						isValid = false;
+					}
+
+					// PASSWORD CHECK
+					if (password.value.trim() === "") {
+						password.classList.add("is-invalid");
+						isValid = false;
+					}
+
+					// CAPTCHA CHECK
+					if (captcha.value.trim() === "") {
+						captcha.classList.add("is-invalid");
+						isValid = false;
+					}
+
+					// STOP FORM SUBMIT
+					if (!isValid) {
+						e.preventDefault();
+					}
+
+				});
+	</script>
+	
+	<script nonce="xYwighvkJQauzqKRf0MszRbyDfE8X12h/9fNRrIc3Dw=">
+document.addEventListener("DOMContentLoaded", function () {
+
+    const lockMessage = document.querySelector(".login-lock-message");
+    const timerElement = document.getElementById("lockTimer");
+
+    if (!lockMessage || !timerElement) {
+        return;
+    }
+
+    let remainingSeconds = parseInt(
+        lockMessage.getAttribute("data-lock-seconds"),
+        10
+    );
+
+    if (isNaN(remainingSeconds) || remainingSeconds <= 0) {
+        return;
+    }
+
+    function updateTimer() {
+
+        const minutes = Math.floor(remainingSeconds / 60);
+        const seconds = remainingSeconds % 60;
+
+        timerElement.textContent =
+            minutes + ":" + String(seconds).padStart(2, "0");
+
+        if (remainingSeconds <= 0) {
+            clearInterval(timerInterval);
+
+            setTimeout(function () {
+                window.location.href = contextPath+ "loginPage";
+            }, 1000);
+
+            return;
+        }
+
+        remainingSeconds--;
+    }
+
+    updateTimer();
+
+    const timerInterval = setInterval(updateTimer, 1000);
+
+});
+</script>
+</body>
+
+</html>
