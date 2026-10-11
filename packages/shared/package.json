@@ -1,0 +1,14 @@
+{
+  "name": "@carbontwin/shared",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./types": "./src/types.ts",
+    "./api.schemas": "./src/api.schemas.ts",
+    "./ws.events": "./src/ws.events.ts"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  }
+}
