@@ -1,0 +1,16 @@
+# Installed packages and generated TypeScript output.
+node_modules/
+dist/
+coverage/
+
+# Local configuration and runtime artifacts.
+.env
+.env.*
+!.env.example
+*.log
+npm-debug.log*
+
+# Operating system and editor files.
+.DS_Store
+Thumbs.db
+.vscode/

@@ -1,0 +1,11 @@
+# Keep local dependencies and repository metadata out of the Docker build context.
+node_modules
+**/node_modules
+.git
+.github
+
+# Omit generated and local-only files.
+**/dist
+**/coverage
+**/.env
+**/*.log
