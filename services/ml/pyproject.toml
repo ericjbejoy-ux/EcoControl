@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "carbontwin-ml"
+version = "2.0.0"
+description = "CarbonTwin AI/ML & Digital Twin microservice (RC twin, LightGBM forecast, SHAP, MPC optimizer, scenario economics)."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Member 1 — AI/ML & Digital Twin Engineer" }]
+dependencies = [
+    "fastapi==0.115.6",
+    "uvicorn[standard]==0.34.0",
+    "pydantic==2.10.4",
+    "numpy==2.2.1",
+    "pandas==2.2.3",
+    "scipy==1.15.0",
+    "scikit-learn==1.6.0",
+    "joblib==1.4.2",
+    "lightgbm==4.5.0",
+    "shap==0.46.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==8.3.4",
+    "pytest-cov==6.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+exclude = ["notebooks", "artifacts"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["B008"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]

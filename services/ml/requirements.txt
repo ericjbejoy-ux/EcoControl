@@ -1,0 +1,19 @@
+# CarbonTwin ML / Digital Twin service — production requirements [M1]
+# Python 3.11+ (3.10 also works). Pinned for reproducible Docker builds.
+
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+numpy==2.2.1
+pandas==2.2.3
+scipy==1.15.0
+scikit-learn==1.6.0
+joblib==1.4.2
+python-multipart==0.0.20
+httpx==0.28.1
+
+# Explainability & gradient boosting (the two heavy scientific deps).
+# The service degrades gracefully if these are absent (see app/forecasting
+# and app/xai), but they are required for full functionality.
+lightgbm==4.5.0
+shap==0.46.0
