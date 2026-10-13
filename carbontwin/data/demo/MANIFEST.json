@@ -79,6 +79,106 @@
         "demand": "data/raw/india_states_daily_energy_MU.csv",
         "gridIntensity": "data/raw/india_global_electricity_mix.csv (2024)"
       }
+    },
+    {
+      "id": "66666666-6666-4666-8666-666666666666",
+      "key": "pune_test",
+      "name": "Pune Office Tower (test)",
+      "type": "office",
+      "region": "IN-MH",
+      "timezone": "Asia/Kolkata",
+      "lat": 18.5204,
+      "lon": 73.8567,
+      "file": "pune_office_test.csv",
+      "start": "2026-09-11T00:00:00",
+      "end": "2026-09-12T00:00:00",
+      "rows": 96,
+      "source": "user test fixture",
+      "licence": "n/a (test fixture, generated)"
+    },
+    {
+      "id": "77777777-7777-4777-8777-777777777777",
+      "key": "test_mumbai_office_full",
+      "name": "Mumbai BKC Office Tower",
+      "type": "office",
+      "region": "IN-MH",
+      "timezone": "Asia/Kolkata",
+      "file": "test_mumbai_office_full.csv",
+      "rows": 96,
+      "source": "user test fixture",
+      "licence": "n/a (test fixture, generated)"
+    },
+    {
+      "id": "88888888-8888-4888-8888-888888888888",
+      "key": "test_delhi_hospital",
+      "name": "Delhi AIIMS Annex Hospital",
+      "type": "hospital",
+      "region": "IN-DL",
+      "timezone": "Asia/Kolkata",
+      "file": "test_delhi_hospital.csv",
+      "rows": 96,
+      "source": "user test fixture",
+      "licence": "n/a (test fixture, generated)"
+    },
+    {
+      "id": "99999999-9999-4999-8999-999999999999",
+      "key": "test_bengaluru_campus_nocarbon",
+      "name": "Bengaluru Whitefield Campus",
+      "type": "campus",
+      "region": "IN-KA",
+      "timezone": "Asia/Kolkata",
+      "file": "test_bengaluru_campus_nocarbon.csv",
+      "rows": 96,
+      "source": "user test fixture",
+      "licence": "n/a (test fixture, generated)"
+    },
+    {
+      "id": "1010101010101010-10101010-4101010-8101010-101010101010101010101010",
+      "key": "test_hyderabad_datacenter_watts",
+      "name": "Hyderabad Hyperscale DC-2",
+      "type": "data_center",
+      "region": "IN-TS",
+      "timezone": "Asia/Kolkata",
+      "file": "test_hyderabad_datacenter_watts.csv",
+      "rows": 96,
+      "source": "user test fixture",
+      "licence": "n/a (test fixture, generated)"
+    },
+    {
+      "id": "1111111111111111-11111111-4111111-8111111-111111111111111111111111",
+      "key": "test_chennai_3day",
+      "name": "Chennai OMR IT Park Block C",
+      "type": "office",
+      "region": "IN-TN",
+      "timezone": "Asia/Kolkata",
+      "file": "test_chennai_3day.csv",
+      "rows": 288,
+      "source": "user test fixture",
+      "licence": "n/a (test fixture, generated)"
+    },
+    {
+      "id": "1212121212121212-12121212-4121212-8121212-121212121212121212121212",
+      "key": "test_kerala_missing",
+      "name": "Kochi Marine Drive Hospital",
+      "type": "hospital",
+      "region": "IN-KL",
+      "timezone": "Asia/Kolkata",
+      "file": "test_kerala_missing.csv",
+      "rows": 96,
+      "source": "user test fixture",
+      "licence": "n/a (test fixture, generated)"
+    },
+    {
+      "id": "1313131313131313-13131313-4131313-8131313-131313131313131313131313",
+      "key": "test_gujarat_industrial_mw",
+      "name": "Sanand Industrial Estate Feeder",
+      "type": "industry",
+      "region": "IN-GJ",
+      "timezone": "Asia/Kolkata",
+      "file": "test_gujarat_industrial_mw.csv",
+      "rows": 96,
+      "source": "user test fixture",
+      "licence": "n/a (test fixture, generated)"
     }
   ],
   "notes": "Synthetic datasets are produced by data/scripts/generate_synthetic.py when no permissively-licensed real data is present. See docs/data-sources.md. The Chennai IT Park facility is backed by real Open-Meteo 2024 weather and CEA demand."
